@@ -10,6 +10,11 @@ Requires Blender 4.2 or newer (tested on 5.1).
 
 <a href="https://ko-fi.com/moubix"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Support me on Ko-fi"></a>
 
+<p align="center">
+  <img src="docs/thickness-map.png" alt="Wall thickness map on a model, with the 3DPWizard sidebar" width="49%">
+  <img src="docs/build-volume.png" alt="Printer build volume overlay with a model on the bed" width="49%">
+</p>
+
 ## Features
 
 All tools live in the **3DPWizard** tab of the 3D Viewport sidebar (`N`).
