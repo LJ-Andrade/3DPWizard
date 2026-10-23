@@ -1,4 +1,4 @@
-# Al hacer "Reload Scripts", recargar también los submódulos
+# On "Reload Scripts", reload the submodules too
 if "panels" in locals():
     import importlib
     importlib.reload(utils)

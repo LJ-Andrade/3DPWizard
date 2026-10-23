@@ -11,13 +11,13 @@ class PRINT3D_OT_setup_units(bpy.types.Operator):
     bl_options = {'REGISTER', 'UNDO'}
 
     def execute(self, context):
-        # Unidades de escena: 1 unidad de Blender = 1 mm
+        # Scene units: 1 Blender unit = 1 mm
         units = context.scene.unit_settings
         units.system = 'METRIC'
         units.scale_length = 0.001
         units.length_unit = 'MILLIMETERS'
 
-        # Grilla y clipping en todos los viewports 3D abiertos
+        # Grid and clipping in every open 3D viewport
         for screen in bpy.data.screens:
             for area in screen.areas:
                 if area.type != 'VIEW_3D':

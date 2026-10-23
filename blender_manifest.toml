@@ -21,4 +21,7 @@ paths_exclude_pattern = [
   "/*.zip",
   "/docs/",
   "/.github/",
+  "/AGENTS.md",
+  "/CLAUDE.md",
+  "/.galpon.json",
 ]
