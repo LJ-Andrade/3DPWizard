@@ -6,15 +6,16 @@ if "panels" in locals():
     importlib.reload(drawing)
     importlib.reload(thickness)
     importlib.reload(overhangs)
+    importlib.reload(preferences)
     importlib.reload(properties)
     importlib.reload(operators)
     importlib.reload(panels)
 else:
-    from . import utils, icons, drawing, thickness, overhangs, properties, operators, panels
+    from . import utils, icons, drawing, thickness, overhangs, preferences, properties, operators, panels
 
 import bpy
 
-modules = (properties, operators, thickness, panels)
+modules = (preferences, properties, operators, thickness, panels)
 
 
 def register():

@@ -8,6 +8,8 @@ A Blender add-on to prepare models for 3D printing: set up millimeter units, pre
 
 Requires Blender 4.2 or newer (tested on 5.1).
 
+<a href="https://ko-fi.com/moubix"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Support me on Ko-fi"></a>
+
 ## Features
 
 All tools live in the **3DPWizard** tab of the 3D Viewport sidebar (`N`).
@@ -59,6 +61,10 @@ Build an installable package from the repo folder:
 ```
 blender --command extension build
 ```
+
+## Support
+
+3DPWizard is free. If it saves you a failed print or two, you can buy me a coffee on [Ko-fi](https://ko-fi.com/moubix) — it helps keep the project going. Bug reports and ideas are welcome in [Issues](https://github.com/LJ-Andrade/3DPWizard/issues).
 
 ## License
 
