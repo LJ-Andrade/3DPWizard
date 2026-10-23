@@ -19,4 +19,5 @@ paths_exclude_pattern = [
   "/.git/",
   "/.gitignore",
   "/*.zip",
+  "/docs/",
 ]

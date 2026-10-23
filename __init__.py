@@ -2,6 +2,7 @@
 if "panels" in locals():
     import importlib
     importlib.reload(utils)
+    importlib.reload(icons)
     importlib.reload(drawing)
     importlib.reload(thickness)
     importlib.reload(overhangs)
@@ -9,7 +10,7 @@ if "panels" in locals():
     importlib.reload(operators)
     importlib.reload(panels)
 else:
-    from . import utils, drawing, thickness, overhangs, properties, operators, panels
+    from . import utils, icons, drawing, thickness, overhangs, properties, operators, panels
 
 import bpy
 
@@ -17,6 +18,7 @@ modules = (properties, operators, thickness, panels)
 
 
 def register():
+    icons.register()
     for module in modules:
         for cls in module.classes:
             bpy.utils.register_class(cls)
@@ -34,3 +36,4 @@ def unregister():
     for module in reversed(modules):
         for cls in reversed(module.classes):
             bpy.utils.unregister_class(cls)
+    icons.unregister()

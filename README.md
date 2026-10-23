@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/logo3dpw.png" alt="3DPWizard logo" width="220">
+</p>
+
 # 3DPWizard
 
 A Blender add-on to prepare models for 3D printing: set up millimeter units, preview your printer's build volume, and spot walls that are too thin or overhangs that need support — right in the viewport.

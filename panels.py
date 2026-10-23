@@ -4,7 +4,7 @@ from pathlib import Path
 import bpy
 import numpy as np
 
-from . import overhangs, thickness, utils
+from . import icons, overhangs, thickness, utils
 
 EPSILON = 1e-4
 
@@ -26,7 +26,11 @@ class PRINT3D_PT_title(_PrintSetupPanel, bpy.types.Panel):
     def draw(self, context):
         row = self.layout.row()
         row.scale_y = 1.5
-        row.label(text=_MANIFEST["name"], icon='MOD_REMESH')
+        logo = icons.icon_id("logo")
+        if logo:
+            row.label(text=_MANIFEST["name"], icon_value=logo)
+        else:
+            row.label(text=_MANIFEST["name"], icon='MOD_REMESH')
         sub = row.row()
         sub.alignment = 'RIGHT'
         sub.enabled = False
